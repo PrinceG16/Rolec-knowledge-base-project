@@ -21,7 +21,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default function Page2({ params }: PageProps) {
+export default async function Page2({ params }: PageProps) {
   const productData = getProductData(params.slug);
   return (
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible px-0">
