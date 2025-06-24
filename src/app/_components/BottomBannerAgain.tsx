@@ -1,7 +1,7 @@
-import { ImageCard, Button } from "@rolec-services/rolec-ui";
+import { ImageCard, Button } from "@Rolec-Services/rolec-ui";
 import { Montserrat } from "next/font/google";
-import { Banner } from "@rolec-services/rolec-ui";
-import { Input } from "@rolec-services/rolec-ui";
+import { Banner } from "@Rolec-Services/rolec-ui";
+import { Input } from "@Rolec-Services/rolec-ui";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

@@ -1,4 +1,4 @@
-import { Breadcrumbs } from "@rolec-services/rolec-ui";
+import { Breadcrumbs } from "@Rolec-Services/rolec-ui";
 
 interface Product {
   title: string;

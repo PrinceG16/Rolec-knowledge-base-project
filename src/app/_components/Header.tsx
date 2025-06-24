@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NavBar } from "@rolec-services/rolec-ui";
+import { NavBar } from "@Rolec-Services/rolec-ui";
 
 export function Header() {
   return (

@@ -1,4 +1,3 @@
-import { ImageCard, Button } from "@rolec-services/rolec-ui";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
