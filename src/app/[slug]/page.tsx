@@ -11,17 +11,13 @@ import { RelatedArticles } from "../_components/RelatedArticles";
 
 import { dataSet } from "../lib/products";
 
-interface PageProps {
-  params: { slug: string };
-}
-
 export function generateStaticParams() {
   return dataSet.map((product) => ({
     slug: product.slug,
   }));
 }
 
-export default async function Page2({ params }: PageProps) {
+export default async function Page2({ params }: { params: { slug: string } }) {
   const productData = getProductData(params.slug);
   return (
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible px-0">
