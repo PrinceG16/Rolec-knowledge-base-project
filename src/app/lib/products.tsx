@@ -926,7 +926,7 @@ export const dataSet = [
 
 export async function getProductData(slug: string) {
   return (
-    dataSet.find((product) => product.slug === slug) || {
+    dataSet.find((product) => product.slug === slug) ?? {
       id: -1,
       title: "",
       description: "No description available.",
