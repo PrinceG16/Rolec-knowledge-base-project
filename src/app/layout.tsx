@@ -2,8 +2,11 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
+import Head from "next/head";
+import { Header } from "./_components/Header";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -16,12 +19,22 @@ const geist = Geist({
   variable: "--font-geist-sans",
 });
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
-      <body>
+    <html lang="en" className={`${montserrat.variable}`}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+      <body className="flex h-screen w-full justify-center bg-zinc-100">
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
