@@ -11,14 +11,15 @@ import { RelatedArticles } from "../_components/RelatedArticles";
 
 import { dataSet } from "../lib/products";
 
-export function generateStaticParams() {
-  return dataSet.map((product) => ({
-    slug: product.slug,
-  }));
-}
+// export function generateStaticParams() {
+//   return dataSet.map((product) => ({
+//     slug: product.slug,
+//   }));
+// }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const productData = await getProductData(params.slug);
+  const { slug } = await params;
+  const productData = await getProductData(slug);
   return (
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible px-0">
       <div className="bg-white shadow-sm">
