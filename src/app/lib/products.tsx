@@ -924,7 +924,7 @@ export const dataSet = [
   },
 ];
 
-export function getProductData(slug: string) {
+export async function getProductData(slug: string) {
   return (
     dataSet.find((product) => product.slug === slug) || {
       id: -1,

@@ -17,8 +17,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function Page2({ params }: { params: { slug: string } }) {
-  const productData = getProductData(params.slug);
+export default async function Page({ params }: { params: { slug: string } }) {
+  const productData = await getProductData(params.slug);
   return (
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible px-0">
       <div className="bg-white shadow-sm">
