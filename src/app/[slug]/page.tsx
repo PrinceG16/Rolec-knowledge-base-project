@@ -5,7 +5,7 @@ import { TopHeader } from "../_components/TopHeader";
 import { FAQ } from "../_components/FAQ";
 import { Video } from "../_components/Video";
 import { ProductInformation } from "../_components/ProductInformation";
-import { ImageCard, NavBar } from "@rolec-services/rolec-ui";
+import { ImageCard, NavBar } from "@Rolec-Services/rolec-ui";
 import { getProductData } from "../lib/products";
 import { RelatedArticles } from "../_components/RelatedArticles";
 
