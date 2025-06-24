@@ -11,7 +11,7 @@ export function Banner() {
     <div className="flex justify-center">
       <div className="relative h-[240px] w-[1200px] overflow-hidden rounded-b-xl">
         <img
-          src="/images/banner.png"
+          src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dRD9Q24UMoB49D3Ttnm21vqIAuZUrhywCl7Kp"
           alt="Banner"
           className="h-full w-full object-cover object-[center_38%]"
         />

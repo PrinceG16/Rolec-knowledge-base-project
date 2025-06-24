@@ -22,7 +22,7 @@ export function BottomBannerAgain() {
           heading={{
             children: <>Rolectrified Newsletter</>,
           }}
-          image="images/frame567.png"
+          image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d6iJ8H3uRTqEw6y1b04QDBcpeUkY9VrnLHKoh"
         >
           <Input
             className="border-grey-100 placeholder:text-muted-foreground hover:border-ev-200 focus:border-ev-500 active:border-ev-500 disabled:border-grey-300 disabled:text-grey-300 flex h-10 w-full rounded-lg border bg-white px-3 py-2 text-sm focus:outline-none focus-visible:outline-none disabled:cursor-not-allowed"
@@ -43,7 +43,7 @@ export function BottomBannerAgain() {
           heading={{
             children: <>Rolectrified Podcast</>,
           }}
-          image="images/frame887.png"
+          image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dsbHnT42bpR8Yq7fjGAyZrUwW13OBuoVMvn2h"
         >
           <Button className="lg:w-fit" variant="ev-green-primary">
             Listen Now Please
@@ -61,7 +61,7 @@ export function BottomBannerAgain() {
           heading={{
             children: <>Rolectrified Newsletter</>,
           }}
-          image="images/frame567.png"
+          image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d6iJ8H3uRTqEw6y1b04QDBcpeUkY9VrnLHKoh"
         >
           <Input
             className="border-grey-100 placeholder:text-muted-foreground hover:border-ev-200 focus:border-ev-500 active:border-ev-500 disabled:border-grey-300 disabled:text-grey-300 flex h-10 w-full rounded-lg border bg-white px-3 py-2 text-sm focus:outline-none focus-visible:outline-none disabled:cursor-not-allowed"
@@ -82,7 +82,7 @@ export function BottomBannerAgain() {
           heading={{
             children: <>Rolectrified Podcast</>,
           }}
-          image="images/frame887.png"
+          image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dsbHnT42bpR8Yq7fjGAyZrUwW13OBuoVMvn2h"
         >
           <Button className="lg:w-fit" variant="ev-green-primary">
             Listen Now Please

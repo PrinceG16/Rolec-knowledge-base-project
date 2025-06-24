@@ -10,50 +10,50 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value:
           "Unit & fascia - High impact resistant \nPolycarbonate Mounting back plate - 1.5mm \nSteel with black powder coated finish \nRear bracket plate - 1.5mm 316 Stainless Steel",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "260mm (W) \n 410mm (H) \n 157mm (D)",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value:
           "230V AC (±10 %) \n50/60Hz (Single Phase) \n400V AC (±10 %) \n50/60Hz (3 Phase)",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value:
           "Over current protection, DC fault protection - 6mA, Lightning surge, over temperature protection, PME fault detection, Load balancing",
@@ -71,48 +71,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Polycarbonate casing; steel backplate",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "205×1130×205 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V AC, 400 V AC (3‑phase)",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "DC 6 mA, load balancing",
       },
@@ -129,48 +129,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "PC fascia; 1.5 mm steel; 1.5 mm 316 stainless steel bracket",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "260×410×157 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V / 400 V AC 50/60 Hz",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "DC 6 mA, surge, temp, PME detection, load balancing",
       },
@@ -187,48 +187,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Polycarbonate casing; steel bracket",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "415.5×179×142 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V AC 50/60 Hz",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "RCBO, DC 6 mA, status LEDs",
       },
@@ -245,48 +245,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel enclosure; tamper‑resistant design",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "600×1200×300 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "400 V AC 3‑phase",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Surge, temp, load balancing",
       },
@@ -302,48 +302,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel; aluminium composite panels",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "Varies per model",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V or 400 V AC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "PME detection, RCBO",
       },
@@ -359,48 +359,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Galvanised steel, aluminium composite panels",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "205×1130×205 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V / 400 V AC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "AC overload, DC 6 mA, PME detection",
       },
@@ -417,48 +417,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Polycarbonate; steel bracket",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "260×410×157 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V AC single phase",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "DC 6 mA, overtemp, surge",
       },
@@ -475,48 +475,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Polycarbonate casing; steel bracket",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "260×410×157 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 3",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V AC 50/60 Hz",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "NFC/RFID reader, DC 6 mA",
       },
@@ -532,48 +532,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel cabinet",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "780×1900×470 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 4 (DC)",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "400 V DC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Surge, temp, DC fault, emergency stop",
       },
@@ -589,48 +589,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel cabinet",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "780×1900×470 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 4 (DC)",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "400 V DC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Over-current, surge, EMI shielding",
       },
@@ -646,48 +646,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel cabinet",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "780×1900×470 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 4 (DC)",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "400 V DC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Liquid cooling, emergency stop",
       },
@@ -703,48 +703,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Steel cabinet",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "900×2000×500 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Mode 4 (DC)",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "400 V DC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "High-power safety interlocks",
       },
@@ -761,48 +761,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "ABS handheld unit",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "150×100×50 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Test interface only",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "110–240 V AC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Built‑in RTC, surge protection",
       },
@@ -818,48 +818,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Sheet steel enclosure",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "300×400×150 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Protection and metering",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V / 400 V AC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "RCBO, surge, RCD",
       },
@@ -875,48 +875,48 @@ export const dataSet = [
     downloads: [
       {
         label: "Data Sheet",
-        icon: "/images/productInfomationIcons/table-list.svg",
+        icon: "/images/table-list.svg",
       },
       {
         label: "Installation and Operation Manual",
-        icon: "/images/productInfomationIcons/tool.svg",
+        icon: "/images/tool.svg",
       },
       {
         label: "Statement of Compliance",
-        icon: "/images/productInfomationIcons/Shield.svg",
+        icon: "/images/Shield.svg",
       },
       {
         label: "UKCA & CE Declaration of Conformity",
-        icon: "/images/productInfomationIcons/FileText.svg",
+        icon: "/images/FileText.svg",
       },
       {
         label: "NBS BIM & CAD Packages",
-        icon: "/images/productInfomationIcons/3D.svg",
+        icon: "/images/3D.svg",
       },
     ],
     specifications: [
       {
-        icon: "/images/productInfomationIcons/hexagon.svg",
+        icon: "/images/hexagon.svg",
         label: "Materials",
         value: "Industrial-grade fuse cartridge",
       },
       {
-        icon: "/images/productInfomationIcons/move.svg",
+        icon: "/images/move.svg",
         label: "Dimensions",
         value: "50×25×25 mm",
       },
       {
-        icon: "/images/productInfomationIcons/git-commit.svg",
+        icon: "/images/git-commit.svg",
         label: "Charge Protocol",
         value: "Protection only",
       },
       {
-        icon: "/images/productInfomationIcons/zap.svg",
+        icon: "/images/zap.svg",
         label: "Input Voltage",
         value: "230 V / 400 V AC",
       },
       {
-        icon: "/images/productInfomationIcons/shield.svg",
+        icon: "/images/shield.svg",
         label: "Protection",
         value: "Over-current cutoff",
       },

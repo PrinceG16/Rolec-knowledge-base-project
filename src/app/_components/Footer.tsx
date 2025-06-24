@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto flex w-full max-w-screen-xl flex-col px-6 sm:flex-row sm:justify-between">
         <div className="flex flex-col items-start">
           <Image
-            src="/images/WhiteLogo.svg"
+            src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d60eojhuRTqEw6y1b04QDBcpeUkY9VrnLHKoh"
             alt="Rolec Logo"
             width={110}
             height={40}
@@ -20,7 +20,7 @@ export function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/footerImages/Linkedin.svg"
+                src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dQWAVwAmEBRE67v8iZpmdsOq0VbLWTXy1hrz4"
                 alt="LinkedIn"
                 width={15}
                 height={20}
@@ -32,7 +32,7 @@ export function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/footerImages/instagram.svg"
+                src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dec5NDAZmbCDtIcBvUoNTXVL0P3wn6aZx2y1G"
                 alt="X (Twitter)"
                 width={15}
                 height={20}
@@ -44,7 +44,7 @@ export function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/footerImages/Facebook.svg"
+                src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dnN4muheQcL3dO2hzRybxoC6SfE5u7X4Yr0aK"
                 alt="Facebook"
                 width={10}
                 height={20}
@@ -56,7 +56,7 @@ export function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/footerImages/youtube.svg"
+                src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d5l9a6vo3l8z2ptODIHG76SsuXWB1xZKc4Qy0"
                 alt="YouTube"
                 width={20}
                 height={20}
@@ -68,7 +68,7 @@ export function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/footerImages/x.svg"
+                src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dfICNwGzTDeENW23khj8OHQwLyoFaszPv67AU"
                 alt="Instagram"
                 width={16}
                 height={20}
@@ -95,12 +95,12 @@ export function Footer() {
             >
               LeadConnect
             </a>
-            {/* <a
+            <a
               href="https://www.rolecserv.com/support-products"
               className="hover:underline"
             >
               SupportConnect
-            </a> */}
+            </a>
             <Link href="/home" className="hover:underline">
               Knowledge Base
             </Link>

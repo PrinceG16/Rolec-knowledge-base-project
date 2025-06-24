@@ -20,7 +20,7 @@ export function BottomBanner() {
               </>
             ),
           }}
-          image="banner.png"
+          image="/images/bottombanner.png"
         >
           <Button className="sm:w-fit" variant="ev-green-primary">
             Let us have a chat
@@ -43,7 +43,7 @@ export function BottomBanner() {
               </>
             ),
           }}
-          image="banner.png"
+          image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dsjvsUB2bpR8Yq7fjGAyZrUwW13OBuoVMvn2h"
         >
           <Button className="sm:w-fit" variant="ev-green-primary">
             Let us have a chat

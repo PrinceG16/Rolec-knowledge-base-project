@@ -11,11 +11,11 @@ import { RelatedArticles } from "../_components/RelatedArticles";
 
 import { dataSet } from "../lib/products";
 
-// export function generateStaticParams() {
-//   return dataSet.map((product) => ({
-//     slug: product.slug,
-//   }));
-// }
+export function generateStaticParams() {
+  return dataSet.map((product) => ({
+    slug: product.slug,
+  }));
+}
 
 export default async function Page({
   params,
@@ -37,7 +37,7 @@ export default async function Page({
       </div>
       <ImageCard
         className="relative mx-auto h-[310px] w-full max-w-[1200px] sm:h-[500px]"
-        image="images/ZuraB.png"
+        image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dQDmZcdEBRE67v8iZpmdsOq0VbLWTXy1hrz4Y"
       >
         <div className="absolute top-7/11 left-1/12 text-center text-3xl font-semibold text-white sm:!text-6xl md:!text-7xl">
           {productData.title}

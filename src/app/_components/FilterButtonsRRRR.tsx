@@ -25,7 +25,7 @@ export function FilterButtonsRRRR({
   return (
     <div className="px-4 py-4 sm:px-6 sm:py-4">
       <div className="overflow-x-auto">
-        <div className="flex w-max flex-nowrap justify-center gap-1 xl:px-[110px]">
+        <div className="flex w-max flex-nowrap justify-center gap-1 lg:px-[100px]">
           {buttons.map((btn) => {
             const isSelected = selected === btn.value;
             return (
