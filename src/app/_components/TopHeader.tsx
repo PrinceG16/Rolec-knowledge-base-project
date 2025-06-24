@@ -1,4 +1,5 @@
 import { Breadcrumbs } from "@Rolec-Services/rolec-ui";
+import Link from "next/link";
 
 interface Product {
   title: string;
@@ -21,9 +22,9 @@ export function TopHeader({ product }: { product: Product }) {
       <div className="flex w-[1200px] items-center justify-between text-gray-400">
         <ol className="hidden items-center space-x-2 text-sm text-[#B0B0B0] sm:!flex">
           <li className="font-medium">
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <img
@@ -33,9 +34,9 @@ export function TopHeader({ product }: { product: Product }) {
             />
           </li>
           <li className="font-medium">
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Knowledge Base
-            </a>
+            </Link>
           </li>
           {product.title ? (
             <li>

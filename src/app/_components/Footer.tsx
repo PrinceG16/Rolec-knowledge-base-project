@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -94,15 +95,15 @@ export function Footer() {
             >
               LeadConnect
             </a>
-            <a
+            {/* <a
               href="https://www.rolecserv.com/support-products"
               className="hover:underline"
             >
               SupportConnect
-            </a>
-            <a href="/home" className="hover:underline">
+            </a> */}
+            <Link href="/home" className="hover:underline">
               Knowledge Base
-            </a>
+            </Link>
             <a
               href="https://www.rolecserv.com/become-an-approved-installers"
               className="hover:underline"
