@@ -1,19 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { dataSet } from "../lib/products";
 import { FilterButtonsRRRR } from "./FilterButtonsRRRR";
+
 import { api } from "~/trpc/react";
 
 export function ProductGridWithFilter() {
+  const [products, setProducts] = useState<any[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const filteredImages =
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const res = await fetch("/api/products");
+      const data = await res.json();
+      setProducts(data);
+    };
+    fetchProducts();
+  }, []);
+
+  const filteredProducts =
     selectedCategory === null
-      ? dataSet
-      : dataSet.filter((product) =>
+      ? products
+      : products.filter((product) =>
           product.category.includes(selectedCategory),
         );
 
@@ -24,7 +35,7 @@ export function ProductGridWithFilter() {
       {/* MOBILE GRID */}
       <div className="mt-2 flex justify-center md:!hidden">
         <div className="flex max-w-6xl flex-wrap justify-center gap-4">
-          {filteredImages.map((img, index) => (
+          {filteredProducts.map((img, index) => (
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
@@ -48,7 +59,7 @@ export function ProductGridWithFilter() {
       {/* LAPTOP/TABLET/DESKTOP GRID */}
       <div className="mt-2 flex hidden justify-center px-5 md:!flex">
         <div className="flex max-w-6xl flex-wrap justify-center gap-7">
-          {filteredImages.map((img, index) => (
+          {filteredProducts.map((img, index) => (
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
