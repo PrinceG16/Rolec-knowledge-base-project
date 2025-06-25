@@ -9,7 +9,6 @@ import { getProductData } from "./lib/products";
 import { ProductGridWithFilter } from "./_components/GridFilter";
 import Link from "next/link";
 
-import { LatestPost } from "~/app/_components/post";
 import { api, HydrateClient } from "~/trpc/server";
 
 export default async function Home() {
