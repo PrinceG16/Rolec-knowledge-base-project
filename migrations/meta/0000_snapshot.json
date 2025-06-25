@@ -1,11 +1,11 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "5035f76b-6660-468a-bfad-e6c3a90c90b9",
+  "id": "5d03e9f5-e5bb-4a95-9fbe-2875460e2820",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
-    "testdeployment_categories": {
-      "name": "testdeployment_categories",
+    "categories": {
+      "name": "categories",
       "columns": {
         "id": {
           "name": "id",
@@ -28,8 +28,8 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "testdeployment_downloads": {
-      "name": "testdeployment_downloads",
+    "downloads": {
+      "name": "downloads",
       "columns": {
         "id": {
           "name": "id",
@@ -61,60 +61,27 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
-    "testdeployment_post": {
-      "name": "testdeployment_post",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": true
-        },
-        "name": {
-          "name": "name",
-          "type": "text(256)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "createdAt": {
-          "name": "createdAt",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false,
-          "default": "(unixepoch())"
-        },
-        "updatedAt": {
-          "name": "updatedAt",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "name_idx": {
-          "name": "name_idx",
-          "columns": [
-            "name"
+      "foreignKeys": {
+        "downloads_product_id_products_id_fk": {
+          "name": "downloads_product_id_products_id_fk",
+          "tableFrom": "downloads",
+          "tableTo": "products",
+          "columnsFrom": [
+            "product_id"
           ],
-          "isUnique": false
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
         }
       },
-      "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "testdeployment_product_categories": {
-      "name": "testdeployment_product_categories",
+    "product_categories": {
+      "name": "product_categories",
       "columns": {
         "product_id": {
           "name": "product_id",
@@ -132,21 +99,48 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "product_categories_product_id_products_id_fk": {
+          "name": "product_categories_product_id_products_id_fk",
+          "tableFrom": "product_categories",
+          "tableTo": "products",
+          "columnsFrom": [
+            "product_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "product_categories_category_id_categories_id_fk": {
+          "name": "product_categories_category_id_categories_id_fk",
+          "tableFrom": "product_categories",
+          "tableTo": "categories",
+          "columnsFrom": [
+            "category_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {
-        "testdeployment_product_categories_product_id_category_id_pk": {
+        "product_categories_product_id_category_id_pk": {
           "columns": [
             "product_id",
             "category_id"
           ],
-          "name": "testdeployment_product_categories_product_id_category_id_pk"
+          "name": "product_categories_product_id_category_id_pk"
         }
       },
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "testdeployment_products": {
-      "name": "testdeployment_products",
+    "products": {
+      "name": "products",
       "columns": {
         "id": {
           "name": "id",
@@ -190,8 +184,8 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "testdeployment_specifications": {
-      "name": "testdeployment_specifications",
+    "specifications": {
+      "name": "specifications",
       "columns": {
         "id": {
           "name": "id",
@@ -230,7 +224,21 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "specifications_product_id_products_id_fk": {
+          "name": "specifications_product_id_products_id_fk",
+          "tableFrom": "specifications",
+          "tableTo": "products",
+          "columnsFrom": [
+            "product_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}

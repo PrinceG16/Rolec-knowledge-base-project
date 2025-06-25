@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { dataSet } from "../lib/products";
 import { FilterButtonsRRRR } from "./FilterButtonsRRRR";
+import { api } from "~/trpc/react";
 
 export function ProductGridWithFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
