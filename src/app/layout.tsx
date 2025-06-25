@@ -15,11 +15,6 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
-
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
