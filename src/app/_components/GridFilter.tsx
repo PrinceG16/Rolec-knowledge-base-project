@@ -56,8 +56,8 @@ export function ProductGridWithFilter() {
         </div>
       </div>
 
-      {/* LAPTOP/TABLET/DESKTOP GRID */}
-      <div className="mt-2 flex hidden justify-center px-5 md:!flex">
+      {/* DESKTOP GRID */}
+      <div className="mt-2 hidden justify-center px-5 md:!flex">
         <div className="flex max-w-6xl flex-wrap justify-center gap-7">
           {filteredProducts.map((img, index) => (
             <Link
