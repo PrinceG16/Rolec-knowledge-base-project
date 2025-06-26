@@ -51,7 +51,7 @@ export function TopHeader({ product }: { product: Product }) {
         </ol>
 
         {/* For desktop.... */}
-        <h5 className="hidden items-center gap-2 text-xs sm:!flex">
+        <h5 className="hidden gap-2 text-xs sm:!flex">
           <span className="font-semibold text-[#888888]">Next Training:</span>
           <img
             src="/images/calendar.svg"
@@ -64,9 +64,9 @@ export function TopHeader({ product }: { product: Product }) {
         </h5>
 
         {/* For mobile..... */}
-        <h5 className="flex flex-col text-sm sm:!hidden">
+        <h5 className="flex-col text-sm sm:!hidden">
           <span className="font-semibold text-[#888888]">Next Training:</span>
-          <span className="mt-1 flex items-center justify-end gap-1 font-medium text-[#74AF28]">
+          <span className="mt-1 flex items-center gap-1 font-medium text-[#74AF28]">
             <img
               src="/images/calendar.svg"
               alt="Calendar Icon"
