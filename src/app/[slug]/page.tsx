@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const safeProductData = {
     ...productData,
-    imageUrl: productData.imageUrl ?? "/images/default.png",
+    imageUrl: productData.imageUrl ?? "/images/evo.png",
     description: productData.description ?? "",
   };
 

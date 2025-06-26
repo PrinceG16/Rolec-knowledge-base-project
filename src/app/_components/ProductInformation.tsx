@@ -26,7 +26,7 @@ export function ProductInformation({ product }: { product: Product }) {
               src={
                 product.imageUrl.startsWith("/")
                   ? product.imageUrl
-                  : `/${product.imageUrl}`
+                  : `${product.imageUrl}`
               }
               alt="EV Charger"
               width={300}
@@ -85,7 +85,7 @@ export function ProductInformation({ product }: { product: Product }) {
           src={
             product.imageUrl.startsWith("/")
               ? product.imageUrl
-              : `/${product.imageUrl}`
+              : `${product.imageUrl}`
           }
           alt="EV Charger"
           width={300}
