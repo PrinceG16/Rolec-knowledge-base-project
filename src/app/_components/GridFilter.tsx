@@ -24,24 +24,22 @@ export function ProductGridWithFilter() {
       <FilterButtonsRRRR onFilterChange={setSelectedCategory} />
 
       {/* MOBILE GRID */}
-      <div className="mt-2 flex justify-center md:!hidden">
-        <div className="flex max-w-6xl flex-wrap justify-center gap-4">
+      <div className="mt-2 md:!hidden">
+        <div className="flex flex-wrap justify-center gap-3 px-1">
           {filteredProducts.map((img, index) => (
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
-              className="flex w-[150px] transform flex-col items-center rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
+              className="w-[165px] rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
             >
               <Image
                 src={`${img.imageUrl}`}
                 alt={img.title}
-                width={200}
-                height={200}
-                className="h-auto w-full object-cover"
+                width={220}
+                height={220}
+                className=""
               />
-              <p className="mt-0 pb-0 text-center text-sm font-semibold">
-                {img.title}
-              </p>
+              <p className="text-center text-sm font-semibold">{img.title}</p>
             </Link>
           ))}
         </div>
@@ -54,14 +52,14 @@ export function ProductGridWithFilter() {
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
-              className="flex w-[235px] transform flex-col items-center rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
+              className="rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
             >
               <Image
                 src={`${img.imageUrl}`}
                 alt={img.title}
                 width={200}
                 height={200}
-                className="h-auto w-full object-cover"
+                className="w-full"
               />
               <p className="mt-2 pb-5 text-center text-sm font-semibold">
                 {img.title}

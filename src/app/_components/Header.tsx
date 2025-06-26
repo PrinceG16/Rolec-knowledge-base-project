@@ -6,14 +6,12 @@ export function Header() {
     <div className="bg-white px-5 shadow-sm">
       {/* Mobile header */}
       <header className="flex items-center justify-between py-4 sm:!hidden">
-        <div>
-          <Image
-            src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d2TWrrWiWMtAsCY80oaP5LUyg9EKFchdDfXT4"
-            alt="Rolec Logo"
-            width={150}
-            height={130}
-          />
-        </div>
+        <Image
+          src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d2TWrrWiWMtAsCY80oaP5LUyg9EKFchdDfXT4"
+          alt="Rolec Logo"
+          width={150}
+          height={130}
+        />
         <button className="text-black focus:outline-none">
           <Image
             src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dfsTSjmzTDeENW23khj8OHQwLyoFaszPv67AU"
@@ -26,7 +24,7 @@ export function Header() {
 
       {/* laptop/desktop/tablet header */}
       <header className="mx-auto hidden max-w-[1200px] sm:!flex">
-        <div className="flex gap-11 bg-red-100">
+        <div className="flex gap-11">
           <Image
             src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d2TWrrWiWMtAsCY80oaP5LUyg9EKFchdDfXT4"
             alt="Rolec Logo"
