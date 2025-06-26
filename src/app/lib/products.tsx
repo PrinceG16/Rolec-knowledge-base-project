@@ -1,6 +1,21 @@
 import { db } from "~/server/db/index";
 import { products } from "~/server/db/schema";
 
+export async function getProductData(slug: string) {
+  const row = await db.query.products.findFirst({
+    where: (products, { eq }) => eq(products.slug, slug),
+  });
+
+  if (!row) return null;
+
+  return {
+    ...row,
+    category: JSON.parse(row.category || "[]"),
+    downloads: JSON.parse(row.downloads || "[]"),
+    specifications: JSON.parse(row.specifications || "[]"),
+  };
+}
+
 // export const dataSet = [
 //   {
 //     id: 1,
@@ -926,18 +941,3 @@ import { products } from "~/server/db/schema";
 //     ],
 //   },
 // ];
-
-export async function getProductData(slug: string) {
-  const row = await db.query.products.findFirst({
-    where: (products, { eq }) => eq(products.slug, slug),
-  });
-
-  if (!row) return null;
-
-  return {
-    ...row,
-    category: JSON.parse(row.category || "[]"),
-    downloads: JSON.parse(row.downloads || "[]"),
-    specifications: JSON.parse(row.specifications || "[]"),
-  };
-}
