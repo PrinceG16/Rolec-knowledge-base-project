@@ -3,23 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { dataSet } from "../lib/products";
 import { FilterButtonsRRRR } from "./FilterButtonsRRRR";
 
 import { api } from "~/trpc/react";
 
 export function ProductGridWithFilter() {
-  const [products, setProducts] = useState<any[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const res = await fetch("/api/products");
-      const data = await res.json();
-      setProducts(data);
-    };
-    fetchProducts();
-  }, []);
+  const { data: products = [], isLoading } = api.products.getAll.useQuery();
 
   const filteredProducts =
     selectedCategory === null

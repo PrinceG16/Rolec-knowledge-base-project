@@ -8,22 +8,28 @@ import { ProductInformation } from "../_components/ProductInformation";
 import { ImageCard, NavBar } from "@Rolec-Services/rolec-ui";
 import { getProductData } from "../lib/products";
 import { RelatedArticles } from "../_components/RelatedArticles";
+import { notFound } from "next/navigation";
 
-import { dataSet } from "../lib/products";
+import { db } from "~/server/db/index";
+import { products } from "~/server/db/schema";
 
-export function generateStaticParams() {
-  return dataSet.map((product) => ({
-    slug: product.slug,
-  }));
+export async function generateStaticParams() {
+  const rows = await db.select({ slug: products.slug }).from(products);
+
+  return rows.map((product) => ({ slug: product.slug }));
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function Page({ params }: { params: { slug: string } }) {
   const { slug } = await params;
   const productData = await getProductData(slug);
+  if (!productData) return notFound();
+
+  const safeProductData = {
+    ...productData,
+    imageUrl: productData.imageUrl ?? "/images/default.png",
+    description: productData.description ?? "",
+  };
+
   return (
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible px-0">
       <div className="bg-white shadow-sm">
@@ -33,7 +39,7 @@ export default async function Page({
         </div>
       </div>
       <div className="px-5 py-1">
-        <TopHeader product={productData} />
+        <TopHeader product={safeProductData} />
       </div>
       <ImageCard
         className="relative mx-auto h-[310px] w-full max-w-[1200px] sm:h-[500px]"
@@ -76,7 +82,7 @@ export default async function Page({
       </div>
 
       <section id="technical-documentation">
-        <ProductInformation product={productData} />
+        <ProductInformation product={safeProductData} />
       </section>
       <section id="faq">
         <FAQ />

@@ -1,6 +1,8 @@
 // Example model schema from the Drizzle docs
 // https://orm.drizzle.team/docs/sql-schema-declaration
 
+import { relations } from "drizzle-orm";
+
 import { sql } from "drizzle-orm";
 import {
   index,
@@ -29,3 +31,24 @@ export const products = createTable("products", (d) => ({
   downloads: d.text("downloads"), // JSON.stringify([...])
   specifications: d.text("specifications"), // JSON.stringify([...])
 }));
+
+// export const posts = createTable(
+//   "post",
+//   (d) => ({
+//     id: d.integer({ mode: "number" }).primaryKey({ autoIncrement: true }),
+//     name: d.text({ length: 256 }),
+//     createdById: d
+//       .text({ length: 255 })
+//       .notNull()
+//       .references(() => users.id),
+//     createdAt: d
+//       .integer({ mode: "timestamp" })
+//       .default(sql`(unixepoch())`)
+//       .notNull(),
+//     updatedAt: d.integer({ mode: "timestamp" }).$onUpdate(() => new Date()),
+//   }),
+//   (t) => [
+//     index("created_by_idx").on(t.createdById),
+//     index("name_idx").on(t.name),
+//   ],
+// );

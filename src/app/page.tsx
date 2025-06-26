@@ -8,14 +8,27 @@ import { BottomBannerAgain } from "./_components/BottomBannerAgain";
 import { getProductData } from "./lib/products";
 import { ProductGridWithFilter } from "./_components/GridFilter";
 import Link from "next/link";
-
+import { notFound } from "next/navigation";
 import { api, HydrateClient } from "~/trpc/server";
 
 export default async function Home() {
   const productData = await getProductData("");
 
+  const safeProductData = productData
+    ? {
+        ...productData,
+        imageUrl: productData.imageUrl ?? "",
+        description: productData.description ?? "",
+      }
+    : {
+        title: "",
+        imageUrl: "",
+        description: "",
+        downloads: [],
+        specifications: [],
+      };
+
   return (
-    // <HydrateClient>
     <main className="relative z-0 mx-auto w-full max-w-[2000px] overflow-visible bg-[#F6F6F6]">
       <div className="bg-white shadow-sm">
         <div className="px-5">
@@ -25,7 +38,7 @@ export default async function Home() {
       </div>
 
       <div className="px-5 py-1">
-        <TopHeader product={productData} />
+        <TopHeader product={safeProductData} />
         <Banner />
       </div>
 
@@ -44,6 +57,5 @@ export default async function Home() {
         </div>
       </div>
     </main>
-    // </HydrateClient>
   );
 }
