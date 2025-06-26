@@ -33,7 +33,7 @@ export function ProductGridWithFilter() {
               className="flex w-[150px] transform flex-col items-center rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
             >
               <Image
-                src={`/${img.imageUrl}`}
+                src={`${img.imageUrl}`}
                 alt={img.title}
                 width={200}
                 height={200}
@@ -57,7 +57,7 @@ export function ProductGridWithFilter() {
               className="flex w-[235px] transform flex-col items-center rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
             >
               <Image
-                src={`/${img.imageUrl}`}
+                src={`${img.imageUrl}`}
                 alt={img.title}
                 width={200}
                 height={200}
