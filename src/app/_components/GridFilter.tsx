@@ -52,7 +52,7 @@ export function ProductGridWithFilter() {
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
-              className="rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
+              className="flex w-[235px] flex-col rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
             >
               <Image
                 src={`${img.imageUrl}`}
