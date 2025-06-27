@@ -1,11 +1,11 @@
 export function RelatedArticles() {
   return (
-    <section className="bg-clear mx-auto max-w-[1100px] px-6 py-10 text-gray-900">
+    <section className="bg-clear mx-auto max-w-[1100px] px-6 py-7 text-gray-900">
       <h2 className="text-2xl font-semibold">Related Articles</h2>
       <br />
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"
@@ -21,7 +21,7 @@ export function RelatedArticles() {
         </a>
 
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"
@@ -38,7 +38,7 @@ export function RelatedArticles() {
         </a>
 
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"
@@ -54,7 +54,7 @@ export function RelatedArticles() {
         </a>
 
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"
@@ -70,7 +70,7 @@ export function RelatedArticles() {
         </a>
 
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"
@@ -86,7 +86,7 @@ export function RelatedArticles() {
         </a>
 
         <a href="\">
-          <div className="flex min-h-[135px] w-full transform items-center rounded-b-3xl bg-white transition-transform duration-300 hover:scale-101 hover:shadow-lg">
+          <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
               <h2
                 className="text-xs font-semibold"

@@ -59,7 +59,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
           ]}
         />
       </div>
-
       {/* desktop */}
       <div className="mx-auto hidden w-fit sm:!block">
         <NavBar
@@ -75,7 +74,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
           ]}
         />
       </div>
-
       <section id="technical-documentation">
         <ProductInformation product={safeProductData} />
       </section>
@@ -88,7 +86,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <section id="articles">
         <RelatedArticles />
       </section>
-      <Footer />
+      <div className="flex justify-center bg-[#262626]">
+        <div className="w-full max-w-screen-xl">
+          <Footer />
+        </div>
+      </div>{" "}
     </main>
   );
 }

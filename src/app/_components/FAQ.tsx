@@ -3,7 +3,7 @@ import { Accordion } from "@Rolec-Services/rolec-ui";
 export function FAQ() {
   return (
     <section className="mx-auto max-w-[1100px] bg-white px-6 py-10 text-gray-900">
-      <h2 className="mb-4 text-2xl font-semibold">
+      <h2 className="mb-2 text-2xl font-semibold">
         Frequently Asked Questions
       </h2>
       <br></br>
