@@ -13,12 +13,12 @@ export function BottomBannerAgain() {
   return (
     <>
       {/* Mobile */}
-      <div className="justify-center gap-10 space-y-5 gap-y-6 px-4 py-5 sm:!flex sm:!hidden">
+      <div className="space-y-5 px-4 py-5 sm:!hidden">
         <Banner
           body={{
             children: "Morbi rutrum velit sed mollis ornare.",
           }}
-          className="min-h-[120px] w-full max-w-[1028px] px-6 py-6"
+          className="px-6 py-6"
           heading={{
             children: <>Rolectrified Newsletter</>,
           }}
@@ -39,7 +39,7 @@ export function BottomBannerAgain() {
           body={{
             children: "Morbi rutrum velit sed mollis ornare.",
           }}
-          className="min-h-[120px] w-full max-w-[1028px] px-6 py-6"
+          className="px-6 py-6"
           heading={{
             children: <>Rolectrified Podcast</>,
           }}
@@ -57,7 +57,7 @@ export function BottomBannerAgain() {
           body={{
             children: "Morbi rutrum velit sed mollis ornare.",
           }}
-          className="h-auto w-full sm:max-w-[500px]"
+          className="w-full sm:max-w-[497px]"
           heading={{
             children: <>Rolectrified Newsletter</>,
           }}
@@ -69,7 +69,7 @@ export function BottomBannerAgain() {
             type="text"
           />
 
-          <Button className="lg:w-fit" variant="ev-green-primary">
+          <Button className="w-fit" variant="ev-green-primary">
             Sign me up!
           </Button>
         </Banner>
@@ -78,13 +78,13 @@ export function BottomBannerAgain() {
           body={{
             children: "Morbi rutrum velit sed mollis ornare.",
           }}
-          className="h-auto w-full md:max-w-[493px]"
+          className="w-full sm:max-w-[497px]"
           heading={{
             children: <>Rolectrified Podcast</>,
           }}
           image="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dsbHnT42bpR8Yq7fjGAyZrUwW13OBuoVMvn2h"
         >
-          <Button className="lg:w-fit" variant="ev-green-primary">
+          <Button className="w-fit" variant="ev-green-primary">
             Listen Now Please
           </Button>
         </Banner>

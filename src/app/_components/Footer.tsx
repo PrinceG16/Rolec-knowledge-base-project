@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-[#262626] py-16 text-center text-white">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col px-6 sm:flex-row sm:justify-between">
-        <div className="flex flex-col items-start">
+    <footer className="bg-[#262626] py-16 text-white">
+      <div className="flex flex-col px-6 sm:flex-row sm:justify-between">
+        <div>
           <Image
             src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d60eojhuRTqEw6y1b04QDBcpeUkY9VrnLHKoh"
             alt="Rolec Logo"
@@ -13,7 +13,7 @@ export function Footer() {
             height={40}
           />
 
-          <div className="mt-6 flex flex-wrap gap-4">
+          <div className="mt-6 flex gap-4">
             <a
               href="https://www.linkedin.com/company/rolec-services"
               target="_blank"
@@ -86,7 +86,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-20">
           <div className="flex flex-col gap-2 text-left">
-            <div className="text-base font-semibold text-zinc-400">
+            <div className="font-semibold text-zinc-400">
               RolecConnect Services
             </div>
             <a
@@ -118,7 +118,7 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="flex flex-col gap-2 text-left">
+          <div className="flex flex-col gap-2">
             <div className="text-base font-semibold text-zinc-400">
               Company & Compliance
             </div>
