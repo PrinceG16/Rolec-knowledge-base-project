@@ -9,23 +9,50 @@ import { api } from "~/trpc/react";
 
 export function ProductGridWithFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [show, setShow] = useState(false);
+  const [filteredProducts, setFilteredProducts] = useState<any[]>([]);
+  const [isFading, setIsFading] = useState(false);
 
   const { data: products = [], isLoading } = api.products.getAll.useQuery();
 
-  const filteredProducts =
-    selectedCategory === null
-      ? products
-      : products.filter((product) =>
-          product.category.includes(selectedCategory),
-        );
+  useEffect(() => {
+    setIsFading(true);
+
+    const timeout = setTimeout(() => {
+      const result =
+        selectedCategory === null
+          ? products
+          : products.filter((product) =>
+              product.category.includes(selectedCategory),
+            );
+
+      setFilteredProducts(result);
+      setIsFading(false);
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [selectedCategory, products]);
+
+  useEffect(() => {
+    setShow(false);
+    const timeout = setTimeout(() => setShow(true), 100);
+    return () => clearTimeout(timeout);
+  }, [selectedCategory]);
+
+  const fadeClass = `transition-opacity duration-500 ${show ? "opacity-100" : "opacity-0"}`;
 
   return (
     <>
       <FilterButtonsRRRR onFilterChange={setSelectedCategory} />
 
       {/* MOBILE GRID */}
-      <div className="mt-2 md:!hidden">
-        <div className="flex flex-wrap justify-center gap-3 px-1">
+      <div className={`mt-2 md:!hidden ${fadeClass}`}>
+        <div
+          className={`flex flex-wrap justify-center gap-3 px-1 transition-opacity duration-500 ${
+            isFading ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {" "}
           {filteredProducts.map((img, index) => (
             <Link
               key={index}
@@ -46,8 +73,13 @@ export function ProductGridWithFilter() {
       </div>
 
       {/* DESKTOP GRID */}
-      <div className="mt-2 hidden justify-center px-5 md:!flex">
-        <div className="flex max-w-6xl flex-wrap justify-center gap-7">
+      <div className={`mt-2 hidden justify-center px-5 md:!flex ${fadeClass}`}>
+        <div
+          className={`flex max-w-6xl flex-wrap justify-center gap-7 transition-opacity duration-500 ${
+            isFading ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {" "}
           {filteredProducts.map((img, index) => (
             <Link
               key={index}

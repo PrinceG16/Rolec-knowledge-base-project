@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = await params;
+  const { slug } = params;
   const productData = await getProductData(slug);
   if (!productData) return notFound();
 
