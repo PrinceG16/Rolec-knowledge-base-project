@@ -1,19 +1,5 @@
 import Link from "next/link";
-
-interface Product {
-  title: string;
-  imageUrl: string;
-  description: string;
-  downloads: {
-    label: string;
-    icon: string;
-  }[];
-  specifications: {
-    icon: string;
-    label: string;
-    value: string;
-  }[];
-}
+import type { Product } from "../lib/product";
 
 export default function TopHeader({ product }: { product: Product }) {
   return (

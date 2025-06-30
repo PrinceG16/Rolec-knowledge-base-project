@@ -13,7 +13,7 @@ export default function ProductGridWithFilter() {
   const [filteredProducts, setFilteredProducts] = useState<any[]>([]);
   const [isFading, setIsFading] = useState(false);
 
-  const { data: products = [], isLoading } = api.products.getAll.useQuery();
+  const { data: products = [] } = api.products.getAll.useQuery();
 
   useEffect(() => {
     setIsFading(true);

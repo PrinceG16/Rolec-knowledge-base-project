@@ -1,19 +1,5 @@
 import Image from "next/image";
-
-interface Product {
-  title: string;
-  imageUrl: string;
-  description: string;
-  downloads?: {
-    label: string;
-    icon: string;
-  }[];
-  specifications?: {
-    icon: string;
-    label: string;
-    value: string;
-  }[];
-}
+import type { Product } from "../lib/product";
 
 export default function ProductInformation({ product }: { product: Product }) {
   return (

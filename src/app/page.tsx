@@ -8,11 +8,14 @@ import ProductGridWithFilter from "./_components/GridFilter";
 
 export default async function Home() {
   const nullProductData = {
+    id: 0,
+    slug: "",
+    category: [] as string[],
     title: "",
     imageUrl: "",
     description: "",
-    downloads: [],
-    specifications: [],
+    downloads: [] as { label: string; icon: string }[],
+    specifications: [] as { icon: string; label: string; value: string }[],
   };
 
   return (
