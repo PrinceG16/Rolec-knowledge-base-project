@@ -1,7 +1,6 @@
 import { db } from "~/server/db/index";
-import { products } from "~/server/db/schema";
 
-export async function getProductData(slug: string) {
+export default async function getProductData(slug: string) {
   const row = await db.query.products.findFirst({
     where: (products, { eq }) => eq(products.slug, slug),
   });

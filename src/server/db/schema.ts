@@ -1,17 +1,7 @@
 // Example model schema from the Drizzle docs
 // https://orm.drizzle.team/docs/sql-schema-declaration
 
-import { relations } from "drizzle-orm";
-
-import { sql } from "drizzle-orm";
-import {
-  index,
-  sqliteTableCreator,
-  primaryKey,
-  text,
-  integer,
-  foreignKey,
-} from "drizzle-orm/sqlite-core";
+import { sqliteTableCreator } from "drizzle-orm/sqlite-core";
 
 /**
  * This is an example of how to use the multi-project schema feature of Drizzle ORM. Use the same
@@ -27,9 +17,9 @@ export const products = createTable("products", (d) => ({
   slug: d.text("slug").notNull(),
   description: d.text("description"),
   imageUrl: d.text("image_url"),
-  category: d.text("category"), // JSON.stringify(["Home", "DC"])
-  downloads: d.text("downloads"), // JSON.stringify([...])
-  specifications: d.text("specifications"), // JSON.stringify([...])
+  category: d.text("category"),
+  downloads: d.text("downloads"),
+  specifications: d.text("specifications"),
 }));
 
 // export const posts = createTable(
