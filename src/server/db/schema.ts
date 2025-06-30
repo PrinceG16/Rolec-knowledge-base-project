@@ -15,11 +15,11 @@ export const products = createTable("products", (d) => ({
   id: d.integer("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
   title: d.text("title").notNull(),
   slug: d.text("slug").notNull(),
-  description: d.text("description"),
-  imageUrl: d.text("image_url"),
-  category: d.text("category"),
-  downloads: d.text("downloads"),
-  specifications: d.text("specifications"),
+  description: d.text("description").notNull(),
+  imageUrl: d.text("image_url").notNull(),
+  category: d.text("category").notNull(),
+  downloads: d.text("downloads").notNull(),
+  specifications: d.text("specifications").notNull(),
 }));
 
 // export const posts = createTable(

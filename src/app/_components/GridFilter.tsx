@@ -6,18 +6,18 @@ import Image from "next/image";
 import FilterButtonsRRRR from "./FilterButtonsRRRR";
 
 import { api } from "~/trpc/react";
+import type { Product } from "../lib/product";
 
 export default function ProductGridWithFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [show, setShow] = useState(false);
-  const [filteredProducts, setFilteredProducts] = useState<any[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [isFading, setIsFading] = useState(false);
 
   const { data: products = [] } = api.products.getAll.useQuery();
 
   useEffect(() => {
     setIsFading(true);
-
     const timeout = setTimeout(() => {
       const result =
         selectedCategory === null
