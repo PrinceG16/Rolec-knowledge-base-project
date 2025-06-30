@@ -1,13 +1,9 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Geist } from "next/font/google";
 import { Montserrat } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import Head from "next/head";
-import { Analytics } from "@vercel/analytics/next";
-import { Header } from "./_components/Header";
 
 export const metadata: Metadata = {
   title: "Rolec Services Ltd | Knowledge Base",

@@ -1,7 +1,7 @@
 import { Button } from "@Rolec-Services/rolec-ui";
 import { Banner } from "@Rolec-Services/rolec-ui";
 
-export function BottomBanner() {
+export default function BottomBanner() {
   return (
     <>
       {/* MOBILE BANNER */}

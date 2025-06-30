@@ -1,15 +1,8 @@
-import { ImageCard, Button } from "@Rolec-Services/rolec-ui";
-import { Montserrat } from "next/font/google";
+import { Button } from "@Rolec-Services/rolec-ui";
 import { Banner } from "@Rolec-Services/rolec-ui";
 import { Input } from "@Rolec-Services/rolec-ui";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
-
-export function BottomBannerAgain() {
+export default function BottomBannerAgain() {
   return (
     <>
       {/* Mobile */}

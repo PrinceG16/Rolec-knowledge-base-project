@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-[#262626] py-16 text-white">
       <div className="flex flex-col px-6 sm:flex-row sm:justify-between">

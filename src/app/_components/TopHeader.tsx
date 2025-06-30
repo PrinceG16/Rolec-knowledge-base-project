@@ -1,22 +1,21 @@
-import { Breadcrumbs } from "@Rolec-Services/rolec-ui";
 import Link from "next/link";
 
 interface Product {
   title: string;
   imageUrl: string;
   description: string;
-  downloads?: {
+  downloads: {
     label: string;
     icon: string;
   }[];
-  specifications?: {
+  specifications: {
     icon: string;
     label: string;
     value: string;
   }[];
 }
 
-export function TopHeader({ product }: { product: Product }) {
+export default function TopHeader({ product }: { product: Product }) {
   return (
     <div className="flex justify-center bg-zinc-100 py-4">
       <div className="flex w-[1200px] items-center justify-between text-gray-400">

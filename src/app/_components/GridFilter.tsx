@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FilterButtonsRRRR } from "./FilterButtonsRRRR";
+import FilterButtonsRRRR from "./FilterButtonsRRRR";
 
 import { api } from "~/trpc/react";
 
-export function ProductGridWithFilter() {
+export default function ProductGridWithFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [show, setShow] = useState(false);
   const [filteredProducts, setFilteredProducts] = useState<any[]>([]);

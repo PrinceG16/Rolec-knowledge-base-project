@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { NavBar } from "@Rolec-Services/rolec-ui";
 
-export function Header() {
+export default function Header() {
   return (
     <div className="bg-white px-5 shadow-sm">
       {/* Mobile header */}
@@ -30,7 +30,6 @@ export function Header() {
             alt="Rolec Logo"
             width={120}
             height={50}
-            // className="w-full"
           />
 
           <NavBar

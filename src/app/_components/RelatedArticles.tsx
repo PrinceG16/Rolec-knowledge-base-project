@@ -2,7 +2,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export function RelatedArticles() {
+export default function RelatedArticles() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 

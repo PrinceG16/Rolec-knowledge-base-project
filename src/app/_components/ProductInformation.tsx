@@ -15,7 +15,7 @@ interface Product {
   }[];
 }
 
-export function ProductInformation({ product }: { product: Product }) {
+export default function ProductInformation({ product }: { product: Product }) {
   return (
     <>
       {/* desktop */}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function FilterButtonsRRRR({
+export default function FilterButtonsRRRR({
   onFilterChange,
 }: {
   onFilterChange: (category: string | null) => void;

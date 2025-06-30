@@ -1,12 +1,4 @@
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
-
-export function Banner() {
+export default function Banner() {
   return (
     <div className="flex justify-center">
       <div className="relative h-[240px] w-[1200px] overflow-hidden rounded-b-xl">

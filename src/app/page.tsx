@@ -1,10 +1,10 @@
-import { Header } from "./_components/Header";
-import { Footer } from "./_components/Footer";
-import { BottomBanner } from "./_components/BottomBanner";
-import { TopHeader } from "./_components/TopHeader";
-import { Banner } from "./_components/Banner";
-import { BottomBannerAgain } from "./_components/BottomBannerAgain";
-import { ProductGridWithFilter } from "./_components/GridFilter";
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
+import BottomBanner from "./_components/BottomBanner";
+import TopHeader from "./_components/TopHeader";
+import Banner from "./_components/Banner";
+import BottomBannerAgain from "./_components/BottomBannerAgain";
+import ProductGridWithFilter from "./_components/GridFilter";
 
 export default async function Home() {
   const nullProductData = {
