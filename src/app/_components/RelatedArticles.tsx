@@ -1,9 +1,23 @@
+"use client";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 export function RelatedArticles() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="bg-clear mx-auto max-w-[1100px] px-6 py-7 text-gray-900">
       <h2 className="text-2xl font-semibold">Related Articles</h2>
       <br />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 40 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
+        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
         <a href="\">
           <div className="flex min-h-[135px] items-center rounded-b-3xl bg-white duration-300 hover:scale-101 hover:shadow-lg">
             <div className="w-full p-4">
@@ -100,7 +114,7 @@ export function RelatedArticles() {
             </div>
           </div>
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }

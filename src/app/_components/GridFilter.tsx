@@ -84,16 +84,16 @@ export function ProductGridWithFilter() {
             <Link
               key={index}
               href={`/${encodeURIComponent(img.slug)}`}
-              className="flex w-[235px] flex-col rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-101 hover:shadow-lg"
+              className="group flex w-[235px] flex-col rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-102 hover:shadow-lg"
             >
               <Image
                 src={`${img.imageUrl}`}
                 alt={img.title}
                 width={200}
                 height={200}
-                className="w-full"
+                className="w-full transition-transform duration-100 hover:scale-115"
               />
-              <p className="mt-2 pb-5 text-center text-sm font-semibold">
+              <p className="mt-2 pb-5 text-center text-sm font-semibold text-[#262626] transition-colors duration-5 group-hover:text-[#74AF28]">
                 {img.title}
               </p>
             </Link>
