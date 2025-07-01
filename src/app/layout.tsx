@@ -27,7 +27,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${montserrat.variable}`}>
-      <body className="flex h-screen w-full justify-center bg-zinc-100">
+      <body className="flex h-screen w-full justify-center bg-[#F6F6F6]">
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
