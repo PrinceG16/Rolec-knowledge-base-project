@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 export default function RelatedArticles() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
 
   return (
     <section className="bg-clear mx-auto max-w-[1100px] px-6 py-7 text-gray-900">
@@ -15,7 +15,7 @@ export default function RelatedArticles() {
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
+        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
         <a href="\">
