@@ -90,7 +90,7 @@ export default function ProductGridWithFilter() {
                 alt={img.title}
                 width={200}
                 height={200}
-                className="w-full transition-transform duration-100 hover:scale-115"
+                className="w-full transition-transform duration-100 hover:scale-100"
               />
               <p className="mt-2 pb-5 text-center text-sm font-semibold text-[#262626] transition-colors duration-5 group-hover:text-[#74AF28]">
                 {img.title}

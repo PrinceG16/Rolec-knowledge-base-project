@@ -1,7 +1,6 @@
 "use-client";
 
 import React, { useState } from "react";
-import { client } from "~/server/db";
 
 export default function FilterButtonsRRRR({
   onFilterChange,
@@ -26,9 +25,9 @@ export default function FilterButtonsRRRR({
   };
 
   return (
-    <div className="px-4 py-4 sm:px-6 sm:py-4">
+    <div className="px-5 py-2 sm:!px-6 sm:!py-4">
       <div className="overflow-x-auto">
-        <div className="flex w-max flex-nowrap justify-center gap-1 lg:px-[100px]">
+        <div className="mb-2 flex w-max flex-nowrap justify-center gap-1 sm:mb-0 lg:px-[100px]">
           {buttons.map((btn) => {
             const isSelected = selected === btn.value;
             return (
