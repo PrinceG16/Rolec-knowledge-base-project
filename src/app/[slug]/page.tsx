@@ -10,31 +10,20 @@ import getProductData from "../lib/products";
 import RelatedArticles from "../_components/RelatedArticles";
 import { notFound } from "next/navigation";
 
-import { db } from "~/server/db/index";
-import { products } from "~/server/db/schema";
-
-// export async function generateStaticParams() {
-//   const rows = await db.select({ slug: products.slug }).from(products);
-
-//   return rows.map((product) => ({ slug: product.slug }));
-// }
-
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const productData = await getProductData(slug);
   if (!productData) return notFound();
-
-  const safeProductData = {
-    ...productData,
-    imageUrl: productData.imageUrl ?? "/images/evo.png",
-    description: productData.description ?? "",
-  };
 
   return (
     <main className="w-full bg-[#F6F6F6]">
       <Header />
       <div className="px-5 py-1">
-        <TopHeader product={safeProductData} />
+        <TopHeader product={productData} />
       </div>
       <ImageCard
         className="relative mx-auto h-[310px] w-full max-w-[1200px] sm:h-[500px]"
@@ -75,7 +64,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         />
       </div>
       <section id="technical-documentation">
-        <ProductInformation product={safeProductData} />
+        <ProductInformation product={productData} />
       </section>
       <section id="faq">
         <FAQ />

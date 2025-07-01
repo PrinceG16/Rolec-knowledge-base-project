@@ -15,23 +15,4 @@ export const productRouter = createTRPCRouter({
       specifications: JSON.parse(row.specifications || "[]") as Specification[],
     }));
   }),
-
-  // getByCategory: publicProcedure
-  //   .input(z.object({ category: z.string() }))
-  //   .query(async ({ ctx, input }) => {
-  //     const rows = await ctx.db.select().from(products);
-
-  //
-  //     const filtered = rows.filter((row) => {
-  //       const categories: string[] = JSON.parse(row.category || "[]");
-  //       return categories.includes(input.category);
-  //     });
-
-  //     return filtered.map((row) => ({
-  //       ...row,
-  //       category: JSON.parse(row.category || "[]"),
-  //       downloads: JSON.parse(row.downloads || "[]"),
-  //       specifications: JSON.parse(row.specifications || "[]"),
-  //     }));
-  //   }),
 });

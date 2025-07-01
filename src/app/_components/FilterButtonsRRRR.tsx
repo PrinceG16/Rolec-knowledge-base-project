@@ -1,4 +1,7 @@
+"use-client";
+
 import React, { useState } from "react";
+import { client } from "~/server/db";
 
 export default function FilterButtonsRRRR({
   onFilterChange,
