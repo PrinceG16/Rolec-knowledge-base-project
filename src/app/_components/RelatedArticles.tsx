@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 export default function RelatedArticles() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.3, once: true });
+  const isInView = useInView(ref, { amount: 0.1, once: true });
 
   return (
     <section className="bg-clear mx-auto max-w-[1100px] px-6 py-7 text-gray-900">

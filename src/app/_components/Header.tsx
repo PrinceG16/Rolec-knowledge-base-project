@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { NavBar } from "@Rolec-Services/rolec-ui";
+import { SignedIn, SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
+import User from "@clerk/nextjs/server";
 
 export default function Header() {
   return (
@@ -39,6 +41,14 @@ export default function Header() {
               { children: "Knowledge Base", href: "/", notifications: 0 },
             ]}
           />
+
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </header>
     </div>

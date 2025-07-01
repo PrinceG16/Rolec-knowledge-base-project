@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { Specification, Download } from "~/app/lib/product";
+import type { Specification, Download } from "~/app/_lib/product";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 import { products } from "~/server/db/schema";

@@ -21,6 +21,7 @@
     "seed": "ts-node scripts/seedProducts.ts"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.23.2",
     "@libsql/client": "^0.14.0",
     "@Rolec-Services/rolec-ui": "npm:@rolec-services/rolec-ui@^1.1.2",
     "@t3-oss/env-nextjs": "^0.12.0",
@@ -29,7 +30,7 @@
     "@trpc/react-query": "^11.0.0",
     "@trpc/server": "^11.0.0",
     "@vercel/analytics": "^1.5.0",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "drizzle-orm": "^0.41.0",
     "framer-motion": "^12.19.2",
     "next": "^15.2.3",

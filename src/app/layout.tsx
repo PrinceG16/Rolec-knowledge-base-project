@@ -1,5 +1,7 @@
 import "~/styles/globals.css";
 
+import { ClerkProvider } from "@clerk/nextjs";
+
 import { type Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
@@ -26,10 +28,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${montserrat.variable}`}>
-      <body className="flex h-screen w-full justify-center bg-[#F6F6F6]">
-        <TRPCReactProvider>{children}</TRPCReactProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className={`${montserrat.variable}`}>
+        <body className="flex h-screen w-full justify-center bg-[#F6F6F6]">
+          <TRPCReactProvider>{children}</TRPCReactProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -5,8 +5,17 @@ import TopHeader from "./_components/TopHeader";
 import Banner from "./_components/Banner";
 import BottomBannerAgain from "./_components/BottomBannerAgain";
 import ProductGridWithFilter from "./_components/GridFilter";
+import { SignedIn, SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
+  const { userId } = await auth();
+
+  if (!userId) {
+    redirect("/signIn");
+  }
+
   const nullProductData = {
     id: 0,
     slug: "",
