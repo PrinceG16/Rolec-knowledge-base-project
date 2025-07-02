@@ -9,12 +9,20 @@ import { ImageCard, NavBar } from "@Rolec-Services/rolec-ui";
 import getProductData from "../_lib/products";
 import RelatedArticles from "../_components/RelatedArticles";
 import { notFound } from "next/navigation";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
 export default async function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  const { userId } = await auth();
+
+  if (!userId) {
+    redirect("/signIn");
+  }
+
   const { slug } = await params;
   const productData = await getProductData(slug);
   if (!productData) return notFound();

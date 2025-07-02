@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { NavBar } from "@Rolec-Services/rolec-ui";
 import { SignedIn, SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
-import User from "@clerk/nextjs/server";
 
 export default function Header() {
   return (
@@ -25,7 +24,7 @@ export default function Header() {
       </header>
 
       {/* laptop/desktop/tablet header */}
-      <header className="mx-auto hidden max-w-[1200px] sm:!flex">
+      <header className="mx-auto hidden max-w-[1200px] justify-between sm:!flex">
         <div className="flex gap-11">
           <Image
             src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d2TWrrWiWMtAsCY80oaP5LUyg9EKFchdDfXT4"
@@ -41,13 +40,21 @@ export default function Header() {
               { children: "Knowledge Base", href: "/", notifications: 0 },
             ]}
           />
-
+        </div>
+        <div className="flex items-center">
           <SignedOut>
             <SignInButton />
           </SignedOut>
 
           <SignedIn>
-            <UserButton />
+            <UserButton
+              afterSignOutUrl="/signIn"
+              appearance={{
+                elements: {
+                  userButtonAvatarBox: "w-10 h-10",
+                },
+              }}
+            />
           </SignedIn>
         </div>
       </header>

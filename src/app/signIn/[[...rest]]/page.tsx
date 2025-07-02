@@ -8,7 +8,7 @@ export default function SignInPage() {
       className="flex w-full items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://static.wixstatic.com/media/15aa32_4586d80e2e2247419666f6867f4397f6~mv2.webp/v1/fill/w_980,h_552,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/15aa32_4586d80e2e2247419666f6867f4397f6~mv2.webp')",
+          "url('https://static.wixstatic.com/media/48bae8_59d5b67eb50648f599f92b1bd499f16c~mv2.png/v1/fill/w_1897,h_485,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/48bae8_59d5b67eb50648f599f92b1bd499f16c~mv2.png')",
       }}
     >
       <div className="max-w-md justify-center px-8 py-8">

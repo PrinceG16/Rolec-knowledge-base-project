@@ -18,7 +18,7 @@ export default function Video() {
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+        transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
         className="mx-auto aspect-video w-full max-w-[1100px] overflow-hidden rounded-lg"
       >
         <iframe
