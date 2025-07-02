@@ -6,11 +6,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import FilterButtonsRRRR from "./FilterButtonsRRRR";
 import { api } from "~/trpc/react";
-import type { Product } from "../_lib/randomExtras";
 
 export default function ProductGridWithFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const { data: products = [] } = api.products.getAll.useQuery();
+  const {
+    data: products = [],
+    isLoading,
+    isError,
+  } = api.products.getAll.useQuery();
 
   const filteredProducts =
     selectedCategory === null
@@ -23,6 +26,15 @@ export default function ProductGridWithFilter() {
     <>
       <FilterButtonsRRRR onFilterChange={setSelectedCategory} />
 
+      {isLoading && (
+        <div className="text-center text-sm text-gray-500">Loading...</div>
+      )}
+
+      {isError && (
+        <div className="text-center text-sm text-red-500">
+          Failed to load products. Please try again later.
+        </div>
+      )}
       {/* MOBILE GRID */}
       <div className="mt-2 md:hidden">
         <div className="flex flex-wrap justify-center gap-3 px-1">
@@ -38,7 +50,7 @@ export default function ProductGridWithFilter() {
               >
                 <Link
                   href={`/${encodeURIComponent(img.slug)}`}
-                  className="block w-[165px] rounded-b-lg bg-white p-4 hover:shadow-lg"
+                  className="block h-[195px] w-[165px] rounded-b-lg bg-white p-4 hover:shadow-lg"
                 >
                   <Image
                     src={img.imageUrl}
@@ -60,7 +72,7 @@ export default function ProductGridWithFilter() {
       <div className="mt-2 hidden justify-center px-5 md:!flex">
         <div className="flex max-w-6xl flex-wrap justify-center gap-7">
           <AnimatePresence>
-            {filteredProducts.map((img, index) => (
+            {filteredProducts.map((img) => (
               <motion.div
                 key={img.id}
                 layout
