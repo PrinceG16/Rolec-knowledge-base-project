@@ -1,5 +1,11 @@
 import { db } from "~/server/db/index";
-import type { Download, Specification } from "./product";
+
+import {
+  CategorySchema,
+  DownloadsSchema,
+  SpecificationsSchema,
+} from "~/app/_lib/randomExtras";
+import { safeParseJSON } from "~/app/_lib/randomExtras";
 
 export default async function getProductData(slug: string) {
   const row = await db.query.products.findFirst({
@@ -10,9 +16,9 @@ export default async function getProductData(slug: string) {
 
   return {
     ...row,
-    category: JSON.parse(row.category || "[]") as string[],
-    downloads: JSON.parse(row.downloads || "[]") as Download[],
-    specifications: JSON.parse(row.specifications || "[]") as Specification[],
+    category: safeParseJSON(row.category, CategorySchema, []),
+    downloads: safeParseJSON(row.downloads, DownloadsSchema, []),
+    specifications: safeParseJSON(row.specifications, SpecificationsSchema, []),
   };
 }
 

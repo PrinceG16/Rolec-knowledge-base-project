@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Product } from "../_lib/product";
+import type { Product } from "../_lib/randomExtras";
 
 export default function TopHeader({ product }: { product: Product }) {
   return (

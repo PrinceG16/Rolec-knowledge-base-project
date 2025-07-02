@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import type { Product } from "../_lib/product";
+import type { Product } from "../_lib/randomExtras";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 

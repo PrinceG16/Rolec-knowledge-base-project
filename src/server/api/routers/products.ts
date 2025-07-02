@@ -1,8 +1,11 @@
-import { z } from "zod";
-import type { Specification, Download } from "~/app/_lib/product";
-
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 import { products } from "~/server/db/schema";
+import { safeParseJSON } from "~/app/_lib/randomExtras";
+import {
+  SpecificationsSchema,
+  DownloadsSchema,
+  CategorySchema,
+} from "~/app/_lib/randomExtras";
 
 export const productRouter = createTRPCRouter({
   getAll: publicProcedure.query(async ({ ctx }) => {
@@ -10,9 +13,13 @@ export const productRouter = createTRPCRouter({
 
     return rows.map((row) => ({
       ...row,
-      category: JSON.parse(row.category || "[]") as string[],
-      downloads: JSON.parse(row.downloads || "[]") as Download[],
-      specifications: JSON.parse(row.specifications || "[]") as Specification[],
+      category: safeParseJSON(row.category, CategorySchema, []),
+      downloads: safeParseJSON(row.downloads, DownloadsSchema, []),
+      specifications: safeParseJSON(
+        row.specifications,
+        SpecificationsSchema,
+        [],
+      ),
     }));
   }),
 });
