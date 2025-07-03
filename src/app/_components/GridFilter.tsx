@@ -37,7 +37,7 @@ export default function ProductGridWithFilter() {
       )}
       {/* MOBILE GRID */}
       <div className="mt-2 md:hidden">
-        <div className="flex flex-wrap justify-center gap-3 px-1">
+        <div className="flex flex-wrap justify-center gap-3 px-1 transition-opacity duration-500">
           <AnimatePresence>
             {filteredProducts.map((img, index) => (
               <motion.div
@@ -50,7 +50,7 @@ export default function ProductGridWithFilter() {
               >
                 <Link
                   href={`/${encodeURIComponent(img.slug)}`}
-                  className="block h-[195px] w-[165px] rounded-b-lg bg-white p-4 hover:shadow-lg"
+                  className="group block h-[195px] w-[165px] rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-102 hover:shadow-lg"
                 >
                   <Image
                     src={img.imageUrl}
@@ -58,7 +58,7 @@ export default function ProductGridWithFilter() {
                     width={220}
                     height={220}
                   />
-                  <p className="text-center text-sm font-semibold">
+                  <p className="text-center text-sm font-semibold group-hover:text-[#74AF28]">
                     {img.title}
                   </p>
                 </Link>
@@ -83,7 +83,7 @@ export default function ProductGridWithFilter() {
               >
                 <Link
                   href={`/${encodeURIComponent(img.slug)}`}
-                  className="flex w-[235px] flex-col rounded-b-lg bg-white p-4 hover:shadow-lg"
+                  className="group flex w-[235px] flex-col rounded-b-lg bg-white p-4 transition-transform duration-300 hover:scale-102 hover:shadow-lg"
                 >
                   <Image
                     src={img.imageUrl}
@@ -92,7 +92,7 @@ export default function ProductGridWithFilter() {
                     height={200}
                     className="w-full"
                   />
-                  <p className="mt-2 pb-5 text-center text-sm font-semibold text-[#262626] hover:text-[#74AF28]">
+                  <p className="mt-2 pb-5 text-center text-sm font-semibold text-[#262626] transition-colors duration-5 group-hover:text-[#74AF28]">
                     {img.title}
                   </p>
                 </Link>
