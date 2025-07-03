@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${montserrat.variable}`}>
-        <body className="flex h-screen w-full justify-center bg-[#F6F6F6]">
+        <body className="bg-grey-50 flex h-screen w-full justify-center">
           <TRPCReactProvider>{children}</TRPCReactProvider>
         </body>
       </html>

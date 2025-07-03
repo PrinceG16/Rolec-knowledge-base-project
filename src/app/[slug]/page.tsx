@@ -29,7 +29,7 @@ export default async function Page({
   if (!productData) return notFound();
 
   return (
-    <main className="w-full bg-[#F6F6F6]">
+    <main className="bg-grey-50 w-full">
       <Header />
       <div className="px-5 py-1">
         <TopHeader product={productData} />
@@ -55,11 +55,11 @@ export default async function Page({
       <section id="articles">
         <RelatedArticles />
       </section>
-      <div className="flex justify-center bg-[#262626]">
+      <div className="bg-grey-800 flex justify-center">
         <div className="w-full max-w-screen-xl">
           <Footer />
         </div>
-      </div>{" "}
+      </div>
     </main>
   );
 }

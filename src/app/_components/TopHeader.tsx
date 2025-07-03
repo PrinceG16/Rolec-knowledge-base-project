@@ -6,7 +6,7 @@ export default function TopHeader({ product }: { product: Product }) {
     // Breadcrumbs for both desktop and mobile
     <div className="flex justify-center bg-zinc-100 py-4">
       <div className="flex w-[1200px] items-center justify-between text-gray-400">
-        <ol className="hidden items-center space-x-2 text-sm text-[#B0B0B0] sm:!flex">
+        <ol className="text-grey-300 hidden items-center space-x-2 text-sm sm:!flex">
           <li className="font-medium">
             <Link href="/" className="hover:underline">
               Home
@@ -33,28 +33,28 @@ export default function TopHeader({ product }: { product: Product }) {
               />
             </li>
           ) : null}
-          <li className="font-semibold text-[#B0B0B0]">{product.title}</li>
+          <li className="text-grey-300 font-semibold">{product.title}</li>
         </ol>
 
         {/* the your next training message */}
 
         {/* For desktop.... */}
         <h5 className="hidden gap-2 text-xs sm:!flex">
-          <span className="font-semibold text-[#888888]">Next Training:</span>
+          <span className="text-grey-350 font-semibold">Next Training:</span>
           <img
             src="/images/calendar.svg"
             alt="Calendar Icon"
             className="h-4 w-4"
           />
-          <span className="font-medium text-[#74AF28]">
+          <span className="text-ev-500 font-medium">
             15 April 2024 <span className="mx-1"> </span> Rolec R&D, Nottingham
           </span>
         </h5>
 
         {/* For mobile..... */}
         <h5 className="flex-col text-sm sm:!hidden">
-          <span className="font-semibold text-[#888888]">Next Training:</span>
-          <span className="mt-1 flex items-center gap-1 font-medium text-[#74AF28]">
+          <span className="text-grey-350 font-semibold">Next Training:</span>
+          <span className="text-ev-500 mt-1 flex items-center gap-1 font-medium">
             <img
               src="/images/calendar.svg"
               alt="Calendar Icon"

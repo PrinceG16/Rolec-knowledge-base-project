@@ -4,7 +4,7 @@ import BottomBanner from "./_components/BottomBanner";
 import TopHeader from "./_components/TopHeader";
 import Banner from "./_components/Banner";
 import BottomBannerAgain from "./_components/BottomBannerAgain";
-import ProductGridWithFilter from "./_components/GridFilter";
+import Grid from "./_components/Grid";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
@@ -27,7 +27,7 @@ export default async function Home() {
   };
 
   return (
-    <main className="w-full bg-[#F6F6F6]">
+    <main className="bg-grey-50 w-full">
       <Header />
 
       <div className="px-5 py-1">
@@ -37,14 +37,14 @@ export default async function Home() {
 
       <div className="flex justify-center">
         <div className="w-full max-w-screen-xl">
-          <ProductGridWithFilter />
+          <Grid />
         </div>
       </div>
 
       <BottomBanner />
       <BottomBannerAgain />
 
-      <div className="flex justify-center bg-[#262626]">
+      <div className="bg-grey-800 flex justify-center">
         <div className="w-full max-w-screen-xl">
           <Footer />
         </div>

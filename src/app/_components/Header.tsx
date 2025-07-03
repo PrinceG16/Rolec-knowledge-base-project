@@ -4,7 +4,7 @@ import { SignedIn, SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   return (
-    <div className="bg-white px-5 shadow-sm">
+    <div className="sticky top-0 z-50 bg-white px-5 shadow-sm">
       {/* Mobile header */}
       <header className="flex items-center justify-between py-4 sm:!hidden">
         <Image
@@ -41,7 +41,9 @@ export default function Header() {
             ]}
           />
         </div>
-        {/* Clerk user button */}
+
+        {/* Clerk user button BOTH mobile and desktop */}
+
         <div className="flex items-center">
           <SignedOut>
             <SignInButton />
