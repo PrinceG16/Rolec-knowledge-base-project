@@ -3,6 +3,7 @@ import type { Product } from "../_lib/randomExtras";
 
 export default function TopHeader({ product }: { product: Product }) {
   return (
+    // Breadcrumbs for both desktop and mobile
     <div className="flex justify-center bg-zinc-100 py-4">
       <div className="flex w-[1200px] items-center justify-between text-gray-400">
         <ol className="hidden items-center space-x-2 text-sm text-[#B0B0B0] sm:!flex">
@@ -34,6 +35,8 @@ export default function TopHeader({ product }: { product: Product }) {
           ) : null}
           <li className="font-semibold text-[#B0B0B0]">{product.title}</li>
         </ol>
+
+        {/* the your next training message */}
 
         {/* For desktop.... */}
         <h5 className="hidden gap-2 text-xs sm:!flex">

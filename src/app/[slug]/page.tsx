@@ -5,12 +5,13 @@ import TopHeader from "../_components/TopHeader";
 import FAQ from "../_components/FAQ";
 import Video from "../_components/Video";
 import ProductInformation from "../_components/ProductInformation";
-import { ImageCard, NavBar } from "@Rolec-Services/rolec-ui";
+import { ImageCard } from "@Rolec-Services/rolec-ui";
 import getProductData from "../_lib/products";
 import RelatedArticles from "../_components/RelatedArticles";
 import { notFound } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
+import Navigation from "../_components/Navigation";
 
 export default async function Page({
   params,
@@ -41,36 +42,7 @@ export default async function Page({
           {productData.title}
         </div>
       </ImageCard>
-      {/* Mobile */}
-      <div className="mx-auto w-fit sm:!hidden">
-        <NavBar
-          currentHref="#technical-documentation"
-          navItems={[
-            {
-              children: "Summary",
-              href: "#technical-documentation",
-            },
-            { children: "FAQ", href: "#faq", notifications: 0 },
-            { children: "Videos", href: "#videos", disabled: false },
-            { children: "Articles", href: "#articles" },
-          ]}
-        />
-      </div>
-      {/* desktop */}
-      <div className="mx-auto hidden w-fit sm:!block">
-        <NavBar
-          currentHref="#technical-documentation"
-          navItems={[
-            {
-              children: "Technical Documentation",
-              href: "#technical-documentation",
-            },
-            { children: "FAQ", href: "#faq", notifications: 0 },
-            { children: "Videos", href: "#videos", disabled: false },
-            { children: "Articles", href: "#articles" },
-          ]}
-        />
-      </div>
+      <Navigation />
       <section id="technical-documentation">
         <ProductInformation product={productData} />
       </section>

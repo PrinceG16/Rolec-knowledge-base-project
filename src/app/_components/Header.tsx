@@ -41,6 +41,7 @@ export default function Header() {
             ]}
           />
         </div>
+        {/* Clerk user button */}
         <div className="flex items-center">
           <SignedOut>
             <SignInButton />
