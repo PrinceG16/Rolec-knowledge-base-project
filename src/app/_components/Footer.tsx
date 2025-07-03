@@ -9,8 +9,9 @@ export default function Footer() {
           <Image
             src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d60eojhuRTqEw6y1b04QDBcpeUkY9VrnLHKoh"
             alt="Rolec Logo"
-            width={110}
-            height={40}
+            width={0}
+            height={0}
+            style={{ width: "110px", height: "auto" }}
           />
 
           <div className="mt-6 flex gap-4">
@@ -22,8 +23,9 @@ export default function Footer() {
               <Image
                 src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dQWAVwAmEBRE67v8iZpmdsOq0VbLWTXy1hrz4"
                 alt="LinkedIn"
-                width={15}
-                height={20}
+                width={0}
+                height={0}
+                style={{ width: "15px", height: "auto" }}
               />
             </a>
             <a
@@ -34,8 +36,9 @@ export default function Footer() {
               <Image
                 src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dec5NDAZmbCDtIcBvUoNTXVL0P3wn6aZx2y1G"
                 alt="X (Twitter)"
-                width={15}
-                height={20}
+                width={0}
+                height={0}
+                style={{ width: "15px", height: "auto" }}
               />
             </a>
             <a
@@ -46,8 +49,9 @@ export default function Footer() {
               <Image
                 src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dnN4muheQcL3dO2hzRybxoC6SfE5u7X4Yr0aK"
                 alt="Facebook"
-                width={10}
-                height={20}
+                width={0}
+                height={0}
+                style={{ width: "10px", height: "auto" }}
               />
             </a>
             <a
@@ -58,8 +62,9 @@ export default function Footer() {
               <Image
                 src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6d5l9a6vo3l8z2ptODIHG76SsuXWB1xZKc4Qy0"
                 alt="YouTube"
-                width={20}
-                height={20}
+                width={0}
+                height={0}
+                style={{ width: "20px", height: "auto" }}
               />
             </a>
             <a
@@ -70,8 +75,9 @@ export default function Footer() {
               <Image
                 src="https://5coxtwhehm.ufs.sh/f/Y2LSVExOSM6dfICNwGzTDeENW23khj8OHQwLyoFaszPv67AU"
                 alt="Instagram"
-                width={16}
-                height={20}
+                width={0}
+                height={0}
+                style={{ width: "16px", height: "auto" }}
               />
             </a>
           </div>

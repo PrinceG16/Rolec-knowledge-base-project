@@ -22,6 +22,7 @@ export default async function getProductData(slug: string) {
   };
 }
 
+// database to pull before any datasets
 // export const dataSet = [
 //   {
 //     id: 1,

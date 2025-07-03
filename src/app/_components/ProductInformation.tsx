@@ -56,7 +56,7 @@ export default function ProductInformation({ product }: { product: Product }) {
               }
               alt="EV Charger"
               width={300}
-              height={400}
+              height={0}
               className="object-contain"
             />
 
@@ -131,7 +131,7 @@ export default function ProductInformation({ product }: { product: Product }) {
             }
             alt="EV Charger"
             width={300}
-            height={200}
+            height={0}
             className="object-contain"
           />
         </motion.div>

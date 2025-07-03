@@ -60,7 +60,7 @@ export default function Grid() {
                     width={220}
                     height={220}
                   />
-                  <p className="group-hover:text-ev-500 text-center text-sm font-semibold">
+                  <p className="text-center text-sm font-semibold group-hover:text-[#74AF28]">
                     {img.title}
                   </p>
                 </Link>
@@ -95,7 +95,7 @@ export default function Grid() {
                     height={200}
                     className="w-full"
                   />
-                  <p className="text-grey-800 group-hover:text-ev-500 mt-2 pb-5 text-center text-sm font-semibold transition-colors duration-5">
+                  <p className="text-grey-800 mt-2 pb-5 text-center text-sm font-semibold transition-colors duration-5 group-hover:text-[#74AF28]">
                     {img.title}
                   </p>
                 </Link>
