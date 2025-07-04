@@ -6,6 +6,7 @@ import { type Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Rolec Services Ltd | Knowledge Base",
@@ -32,6 +33,7 @@ export default function RootLayout({
       <html lang="en" className={`${montserrat.variable}`}>
         <body className="bg-grey-50 flex h-screen w-full justify-center">
           <TRPCReactProvider>{children}</TRPCReactProvider>
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
