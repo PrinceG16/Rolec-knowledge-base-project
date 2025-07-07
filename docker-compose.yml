@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      secrets:
+        - npm_token
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+    secrets:
+      - npm_token
+
+secrets:
+  npm_token:
+    file: .npm_token

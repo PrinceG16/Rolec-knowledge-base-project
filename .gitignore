@@ -49,3 +49,7 @@ yarn-error.log*
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+
+# rolec ui token secret
+.npm_token

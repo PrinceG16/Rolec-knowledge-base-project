@@ -6,7 +6,7 @@ export default function BottomBannerAgain() {
   return (
     <>
       {/* Mobile */}
-      <div className="z-[2] space-y-5 px-4 py-5 sm:!hidden">
+      <div className="relative z-[2] space-y-5 px-4 py-5 sm:!hidden">
         <Banner
           body={{
             children: "Morbi rutrum velit sed mollis ornare.",

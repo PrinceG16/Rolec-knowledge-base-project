@@ -5,7 +5,7 @@ export default function BottomBanner() {
   return (
     <>
       {/* MOBILE BANNER */}
-      <div className="z-[2] flex justify-center px-4 pt-5 sm:!hidden">
+      <div className="relative z-[2] flex justify-center px-4 pt-5 sm:!hidden">
         <Banner
           body={{
             children:
