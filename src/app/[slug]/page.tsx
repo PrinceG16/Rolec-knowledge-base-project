@@ -4,7 +4,7 @@ import React from "react";
 import TopHeader from "../_components/TopHeader";
 import FAQ from "../_components/FAQ";
 import Video from "../_components/Video";
-import ProductInformation from "../_components/ProductInformation";
+import ProductInformation from "../_components/ProductInfomation/ProductInformation";
 import { ImageCard } from "@Rolec-Services/rolec-ui";
 import getProductData from "../_lib/products";
 import RelatedArticles from "../_components/RelatedArticles";

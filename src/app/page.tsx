@@ -1,10 +1,10 @@
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import BottomBanner from "./_components/BottomBanner";
+import BottomBanner from "./_components/BottomBanners/BottomBanner";
 import TopHeader from "./_components/TopHeader";
 import Banner from "./_components/Banner";
-import BottomBannerAgain from "./_components/BottomBannerAgain";
-import Grid from "./_components/Grid";
+import BottomBannerAgain from "./_components/BottomBanners/SquareBanners";
+import Grid from "./_components/Grid/Grid";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
