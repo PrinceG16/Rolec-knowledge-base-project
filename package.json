@@ -25,6 +25,7 @@
     "@libsql/client": "^0.14.0",
     "@opentelemetry/api": "^1.9.0",
     "@Rolec-Services/rolec-ui": "npm:@rolec-services/rolec-ui@^1.1.2",
+    "@sentry/nextjs": "^9.35.0",
     "@t3-oss/env-nextjs": "^0.12.0",
     "@tanstack/react-query": "^5.69.0",
     "@trpc/client": "^11.0.0",

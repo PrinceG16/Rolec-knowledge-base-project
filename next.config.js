@@ -18,3 +18,5 @@ const config = {
     ignoreDuringBuilds: true,
   },
 };
+
+export default config;
