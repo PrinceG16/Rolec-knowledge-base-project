@@ -32,3 +32,6 @@ Visit the live site at: [_testdeployment-nu.vercel.app_](https://testdeployment-
 - tRPC
 - Drizzle ORM & Turso DB
 - Rolec UI component library
+- Clerk authentication
+- Sentry error management
+- Vercel deployment
